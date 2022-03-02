@@ -1,0 +1,28 @@
+{
+  "name": "alipolat.tech",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "framer-motion": "^6.2.3",
+    "graphql": "^16.3.0",
+    "graphql-request": "^4.0.0",
+    "next": "12.0.10",
+    "nextjs-progressbar": "^0.0.14",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-typical": "^0.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18"
+  }
+}
