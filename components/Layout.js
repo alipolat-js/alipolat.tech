@@ -1,9 +1,8 @@
 import React from 'react';
 import Head from 'next/head'
-import Menu from './Menu';
 
 
-const Layout = ({ title, descripotion, menuColor, children }) => {
+const Layout = ({ title, descripotion, children }) => {
   return (
     <>
       <Head>
@@ -11,7 +10,9 @@ const Layout = ({ title, descripotion, menuColor, children }) => {
         <meta property='og:title' content={title} />
         <meta name="description" content={descripotion} />
         <meta property='og:descriptipn' content={descripotion} />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Ali POLAT"></meta>
+        <meta name="theme-color" content="#1c1d26"></meta>
+        <link rel="icon" href="logo.svg" />
 
         {/* Buy Me a Coffee */}
         <script
@@ -21,18 +22,17 @@ const Layout = ({ title, descripotion, menuColor, children }) => {
           data-id="alipolat"
           data-description="Support me on Buy me a coffee!"
           data-message="Hi. You can buy me coffee to support me..."
-          data-color="#5F7FFF"
+          data-color="#3c63fc"
           data-position="Right"
           data-x_margin="18"
           data-y_margin="18"
         ></script>
       </Head>
 
-      <div className='min-h-screen antialiased bg-primary-dark text-primary-light font-montserrat'>
-        <div className='w-full h-full px-7 py-32 max-w-6xl mx-auto'>
+      <div className='min-h-screen antialiased font-sans bg-primary-dark text-primary-light'>
+        <div className='w-full max-w-6xl h-full px-7 py-32 mx-auto'>
           {children}
         </div>
-        <Menu color={menuColor} />
       </div>
     </>
   );

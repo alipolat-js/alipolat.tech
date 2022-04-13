@@ -1,73 +1,27 @@
-import React, {useState} from 'react';
-import { motion } from "framer-motion";
+import React from 'react';
+import SocialMediaGroup from './SocialMediaGroup';
 
-const Footer = ({followLinksActive}) => {
-  const [followLinks, setfollowLinks] = useState(followLinksActive)
+const Footer = ({ followLinksActive }) => {
 
   return (
-    <footer className='w-full h-full mx-auto pt-32 font-sans'>
+    <footer className='w-full h-full mx-auto mt-24 font-notoSerif'>
 
-      {followLinks && <div className='pb-16'>
-        <h1 className='text-2xl font-bold pb-4'>Follow me</h1>
-        <div className="flex items-center flex-wrap space-x-6 text-4xl">
-          <motion.a
-            href="https://linkedin.com/in/-alipolat"
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="transition-colors duration-300 text-linkedin-color"
-            whileHover={{ scale: 1.1 }}
-          >
-            <i className="fab fa-linkedin" />
-          </motion.a>
+      {followLinksActive && <div className='pb-16'>
+        <h1 className='pb-4 text-2xl font-bold'>Follow me</h1>
 
-          <motion.a
-            href="https://github.com/alipolat-js"
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="transition-colors duration-300 text-github-color"
-            whileHover={{ scale: 1.1 }}
-          >
-            <i className="fab fa-github" />
-          </motion.a>
-
-          <motion.a
-            href="https://dribbble.com/alipolat"
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="transition-colors duration-300 text-dribbble-color"
-            whileHover={{ scale: 1.1 }}
-          >
-            <i className="fab fa-dribbble" />
-          </motion.a>
-
-          <motion.a
-            href="https://www.instagram.com/__alipolat/"
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="transition-colors duration-300 text-instagram-color"
-            whileHover={{ scale: 1.1 }}
-          >
-            <i className="fab fa-instagram" />
-          </motion.a>
-
-          <motion.a
-            href="https://twitter.com/_alipolat"
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="transition-colors duration-300 text-twitter-color"
-            whileHover={{ scale: 1.1 }}
-          >
-            <i className="fab fa-twitter" />
-          </motion.a>
+        <div className="flex items-center space-x-4 text-3xl">
+          <SocialMediaGroup />
         </div>
       </div>}
 
-      <ul className='pb-4'>
-        <li className='text-gray-300 pb-1'><a href='mailto:contact@alipolat.tech' rel='noopener noreferrer' className='hover:text-gray-400'>contact@alipolat.tech</a></li>
-        <li className='text-gray-300 pb-1'><a href='mailto:business@alipolat.tech' rel='noopener noreferrer' className='hover:text-gray-400'>business@alipolat.tech</a></li>
+      <h3 className='pb-2 text-2xl font-bold'>Contact</h3>
+      <ul className='pb-2 font-sans'>
+        <li className='pb-1 text-gray-300 hover:text-gray-400'><a href='mailto:contact@alipolat.tech' rel='noopener noreferrer'><i className="fa-solid fa-envelope" /> contact@alipolat.tech</a></li>
+        <li className='pb-1 text-gray-300 hover:text-gray-400'><a href='mailto:business@alipolat.tech' rel='noopener noreferrer'><i className="fa-solid fa-envelope" /> business@alipolat.tech</a></li>
       </ul>
+      <p className='pb-6 text-md italic text-gray-300'>or dm on social media</p>
 
-      <span className='text-lg font-bold'>Thanks for visiting &nbsp; &lt;3</span>
+      <span className='text-lg font-bold'>Thanks for visiting &nbsp;<i className="fa-solid fa-heart text-red-600" /></span>
     </footer>
   );
 };

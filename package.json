@@ -1,6 +1,6 @@
 {
-  "name": "alipolat.tech",
-  "private": true,
+  "name": "alipolat.tech-development",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",

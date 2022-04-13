@@ -23,3 +23,25 @@ export const getAllProjects = async () => {
   
   return projects;
 }
+
+export const getLastProjects = async () => {
+  const getLastProjectsQuery = gql`
+  {
+    projects(orderBy: date_DESC, last: 3) {
+      id
+      title
+      description
+      githubSource
+      liveSource
+      tags
+      image {
+        url
+      }
+      date
+    }
+  }
+  `;
+
+  const { projects } = await graphcms.request(getLastProjectsQuery);
+  return projects;
+}

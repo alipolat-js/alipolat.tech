@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['"Open Sans"', ...theme.fontFamily.sans],
-        montserrat: ['"Montserrat"', ...theme.fontFamily.sans],
+        notoSerif: ['"Noto Serif"', ...theme.fontFamily.serif],
       },
       colors: {
         "linkedin-color": "#0e76a8",
