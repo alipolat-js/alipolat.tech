@@ -34,6 +34,8 @@ npm install
 ```
 npm run dev
 ```
+Performance Report:
+![Performance Report](https://raw.githubusercontent.com/alipolat-js/alipolat.tech/main/PerformanceReport.png)
 
 ## Build using :
 * **NextJs**
