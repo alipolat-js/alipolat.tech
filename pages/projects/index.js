@@ -32,7 +32,7 @@ const ProjectsPage = ({ projects }) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const projects = await getAllProjects();
 
   return {

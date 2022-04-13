@@ -27,7 +27,7 @@ export const getAllProjects = async () => {
 export const getLastProjects = async () => {
   const getLastProjectsQuery = gql`
   {
-    projects(orderBy: date_DESC, last: 3) {
+    projects(orderBy: date_DESC, first: 3) {
       id
       title
       description
