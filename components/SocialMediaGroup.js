@@ -55,7 +55,7 @@ const SocialMediaGroup = () => {
       </motion.a>
 
       <motion.a
-        href="https://medium.com/@alipolat.js"
+        href="https://ali-polat.medium.com"
         target={"_blank"}
         rel="noopener noreferrer"
         className="text-primary-light"
