@@ -1,13 +1,50 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* TAİLWİND */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* SELECTION */
-::selection {
-  background-color: rgb(97, 97, 97);
+/* DEFAULTS */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #162229;
+  color: white;
 }
+
+*:focus{
+  outline:none;
+} 
+
+
+
+/* NAVBAR */
+#menu-control:not(:checked) ~ .nav-menu {
+  transform: translateX(100%);
+}
+
+#menu-control:checked ~ .nav-menu {
+  transform: translateX(0);
+}
+
+#menu-control:not(:checked) ~ .nav-menu-closer {
+  display: none;
+}
+
+#menu-control:checked ~ .nav-menu-closer {
+  display: block;
+}
+
+
 
 /* SCROLLBAR */
 html {
@@ -15,18 +52,52 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1c1d26;
+  background: #10181d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #1d2d36;
   border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: #0ea5e9;
+}
+
+
+
+/* SELECTION */
+::-moz-selection { /* Code for Firefox */
+  color: #0ea5e9;
+  background: #1d2d36;
+}
+
+::selection {
+  color: #0ea5e9;
+  background: #1d2d36;
+}
+
+
+
+/* Home Section Divider */
+.custom-shape-divider-bottom-1668643722 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1668643722 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 95px;
+}
+
+.custom-shape-divider-bottom-1668643722 .shape-fill {
+  fill: #FFFFFF;
 }
