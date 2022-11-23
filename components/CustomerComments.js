@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll'
 import Flickity from 'react-flickity-component'
 import { getCustomerComments } from '../getData';
 import { useAnimation, motion } from "framer-motion";
@@ -75,9 +74,9 @@ const CustomerComments = () => {
             What my customers say about me
           </motion.p>
 
-          <Link to="contact" className='hidden md:block cursor-pointer text-theme-pale-gray-on-dark hover:text-white text-xl font-bold'>
-            Contact me to get services<i className="fa-solid fa-arrow-down ml-4"></i>
-          </Link>
+          <a href="https://works.alipolat.tech" title='My Portfolio' target={'_blank'} rel="noopener noreferrer" className='cursor-pointer text-theme-pale-gray-on-dark hover:text-theme-text duration-300 text-xl font-bold'>
+            <i className="fa-solid fa-arrow-right-long mr-2"></i> Visit my portfolio to see the details of my work for my clients
+          </a>
         </div>
 
         {

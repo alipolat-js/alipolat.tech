@@ -24,6 +24,8 @@ const Navbar = () => {
           <Link spy to="home" className='cursor-pointer hover:text-theme-text transition duration-300 ease-in-out'>Home</Link>
           <Link spy to="about" activeClass="text-theme-text" className='cursor-pointer hover:text-theme-text transition duration-300 ease-in-out'>About Me</Link>
           <Link spy to="services" activeClass="text-theme-text" className='cursor-pointer hover:text-theme-text transition duration-300 ease-in-out'>Services</Link>
+          <a href="https://works.alipolat.tech" target={'_blank'} title="My Portfolio" rel="noopener noreferrer" className='cursor-pointer hover:text-theme-text transition duration-300 ease-in-out'>My Portfolio</a>
+          <a href="https://blog.alipolat.tech" target={'_blank'} title="My Portfolio" rel="noopener noreferrer" className='cursor-pointer hover:text-theme-text transition duration-300 ease-in-out'>Blog</a>
           <Link spy to="contact" activeClass="text-theme-text" className='cursor-pointer hover:text-theme-text transition duration-300 ease-in-out'>Contact Me</Link>
         </div>
 
@@ -61,6 +63,8 @@ const Navbar = () => {
             <Link spy to="home" className='cursor-pointer hover:text-theme-text-red transition duration-300 ease-in-out'>Home</Link>
             <Link activeClass="text-theme-text-red" spy to="about" className="block mt-6 cursor-pointer hover:text-theme-text-red transition duration-300 ease-in-out">About Me</Link>
             <Link activeClass="text-theme-text-red" spy to="services" className="block mt-6 cursor-pointer hover:text-theme-text-red transition duration-300 ease-in-out">Services</Link>
+            <Link href="https://works.alipolat.tech" target={'_blank'} title="My Portfolio" rel="noopener noreferrer" className="block mt-6 cursor-pointer hover:text-theme-text-red transition duration-300 ease-in-out">My Portfolio</Link>
+            <Link href="https://blog.alipolat.tech" target={'_blank'} title="My Portfolio" rel="noopener noreferrer" className="block mt-6 cursor-pointer hover:text-theme-text-red transition duration-300 ease-in-out">Blog</Link>
             <Link activeClass="text-theme-text-red" spy to="contact" className="block mt-6 cursor-pointer hover:text-theme-text-red transition duration-300 ease-in-out">Contact Me</Link>
           </div>
 

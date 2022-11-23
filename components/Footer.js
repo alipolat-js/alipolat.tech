@@ -86,6 +86,8 @@ const Footer = () => {
         <Link spy to="home" className="block mt-4 cursor-pointer hover:text-white transition duration-300 ease-in-out">Home</Link>
         <Link spy to="about" className="block mt-4 cursor-pointer hover:text-white transition duration-300 ease-in-out">About Me</Link>
         <Link spy to="services" className="block mt-4 cursor-pointer hover:text-white transition duration-300 ease-in-out">Services</Link>
+        <a href="https://works.alipolat.tech" target={'_blank'} title="My Portfolio" rel="noopener noreferrer" className="block mt-4 cursor-pointer hover:text-white transition duration-300 ease-in-out">My Portfolio</a>
+        <a href="https://blog.alipolat.tech" target={'_blank'} title="My Portfolio" rel="noopener noreferrer" className="block mt-4 cursor-pointer hover:text-white transition duration-300 ease-in-out">Blog</a>
         <Link spy to="contact" className="block mt-4 cursor-pointer hover:text-white transition duration-300 ease-in-out">Contact</Link>
       </div>
 
